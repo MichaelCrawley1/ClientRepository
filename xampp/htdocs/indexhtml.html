@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>JSON & AJAX Local Web Service</title>
+	<link rel="stylesheet" href="movies.css">
+	<script src="js/main.js" ></script>
+	<script>
+		function jsonCall(data){
+			console.log(data);
+		}
+	</script>
+
+	<script src = "http://webdev.student.uws.ac.uk/movie-trivia.php?callback=jsonCall"></script>
+</head>
+<body>
+
+	<header>
+		<h1>JSON & AJAX Local Web Service</h1>
+		
+		<p>The follwing table will be filled by ajax on the click of the button</p>
+		<button id="btn">Fetch Info for Movie Data</button>
+
+		<table id="movies_table" class="table"> 
+
+
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Year</th>
+					<th>Genre</th>
+					<th>Lead Actor</th>
+					<th>Director</th>
+
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		
+	</header>
+	<div id="movieInfo"></div>
+	
+</body>
+</html>
